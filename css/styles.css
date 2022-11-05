@@ -37,7 +37,8 @@ body {
 }
 
 .btn {
-  transition: background-color var(--trns-effect), color var(--trns-effect);
+  transition: background-color var(--trns-effect), color var(--trns-effect), box-shadow var(--trns-effect);;
+  
 }
 
 .btn:hover,
@@ -45,11 +46,9 @@ body {
   background: var(--logo-color);
   color: var(--primary-bgr);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.btn-shad {
-  transition: box-shadow var(--trns-effect);
-}
 
 .btn-shad:hover,
 .btn-shad:focus {
@@ -148,7 +147,7 @@ body {
 .link {
   position: relative;
 }
-.link::after {
+.current::after {
   content: '';
   position: absolute;
   bottom: -1px;
@@ -158,13 +157,13 @@ body {
   height: 4px;
   border-radius: 2px;
   background-color: var(--logo-color);
-  opacity: 0;
+  opacity: 1;
 }
-.link.current::after,
+/* .link.current::after,
 .link:hover::after,
 .link:focus::after {
   opacity: 1;
-}
+} */
 
 .link-contact {
   display: flex;
@@ -499,7 +498,7 @@ body {
 
   color: #afb1b8;
 
-  transition: background-color var(--trns-effect), color var(--trns-effect);
+  transition: border-color var(--trns-effect), color var(--trns-effect);
 }
 
 .cleints-link:hover,
