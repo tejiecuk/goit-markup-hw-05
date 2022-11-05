@@ -37,8 +37,7 @@ body {
 }
 
 .btn {
-  transition: color var(--trns-effect);
-  transition: background-color var(--trns-effect);
+  transition: background-color var(--trns-effect), color var(--trns-effect);
 }
 
 .btn:hover,
@@ -49,8 +48,7 @@ body {
 }
 
 .btn-shad {
-  transition: color var(--trns-effect);
-  transition: background-color var(--trns-effect);
+  transition: box-shadow var(--trns-effect);
 }
 
 .btn-shad:hover,
@@ -153,7 +151,7 @@ body {
 .link::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 
   width: 100%;
@@ -411,8 +409,7 @@ body {
   background-color: #fff;
   border-radius: 50%;
 
-  transition: color var(--trns-effect);
-  transition: background-color var(--trns-effect);
+  transition: background-color var(--trns-effect), color var(--trns-effect);
 }
 
 .social-link:hover,
@@ -502,8 +499,7 @@ body {
 
   color: #afb1b8;
 
-  transition: border-color var(--trns-effect);
-  transition: color var(--trns-effect);
+  transition: background-color var(--trns-effect), color var(--trns-effect);
 }
 
 .cleints-link:hover,
@@ -619,7 +615,6 @@ body {
   border-radius: 50%;
 
   transition: background-color var(--trns-effect);
-  transition: color var(--trns-effect);
 }
 
 .link-social:hover,
